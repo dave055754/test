@@ -16,8 +16,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class Application {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(Application.class);
-
 	public static void main(String[] args) throws IOException {
+		
 		System.out.println("Application");
 		SpringApplication.run(Application.class, args);
 	}
