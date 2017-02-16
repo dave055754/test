@@ -1,7 +1,7 @@
+
+/target/
+/.classpath
 /.settings/
 /logs/
 /release/
-/target/
-/.classpath
 /.project
-/.gitignore

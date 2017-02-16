@@ -3,6 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:task="http://www.springframework.org/schema/task"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
 	xsi:schemaLocation="
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
@@ -10,11 +11,20 @@
         http://www.springframework.org/schema/task/spring-task-3.2.xsd 
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
         http://www.springframework.org/schema/util 
         http://www.springframework.org/schema/util/spring-util.xsd">
 
 	<!-- 注解自动扫描 -->
 	<context:component-scan base-package="com.youkeshu.ht" />
+	
+	<mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean id="loginInterceptor" class="com.youkeshu.ht.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 	
 	<!-- <bean id="springContextHolder" class="com.wxc.adplatform.util.SpringContextHolder"
 		lazy-init="false" /> -->

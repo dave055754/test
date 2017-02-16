@@ -1,3 +1,4 @@
 com\youkeshu\ht\Application.class
 com\youkeshu\ht\service\TestSer.class
 com\youkeshu\ht\control\TestCtrl.class
+com\youkeshu\ht\interceptor\LoginInterceptor.class
