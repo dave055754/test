@@ -14,7 +14,7 @@ public class TestCtrl {
 	@Autowired
 	private TestSer testSer;
 	
-	@RequestMapping(value="/",method=RequestMethod.GET,params="name")
+	@RequestMapping(value="/",method=RequestMethod.GET,params={"name"})
 	public String getInfo(@RequestParam(value="id",required=true) Integer id,
 			@RequestParam(value="name",required=false) String name){
 		return "hellobaby";
