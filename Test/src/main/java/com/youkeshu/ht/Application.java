@@ -21,5 +21,7 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 		
 		System.out.println("测试流程");
-	}
+		
+		System.out.println("测试同步");			
+}
 }
