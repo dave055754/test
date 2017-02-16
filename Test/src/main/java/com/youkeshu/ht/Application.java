@@ -19,7 +19,6 @@ public class Application {
 	public static void main(String[] args) throws IOException {
 		System.out.println("Application");
 		SpringApplication.run(Application.class, args);
-		
 		System.out.println("测试流程");
 		
 		System.out.println("测试同步");			
